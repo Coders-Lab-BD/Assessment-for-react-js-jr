@@ -26,7 +26,7 @@ POST /api/v1/models/store
     "field_of_study": "Test Subject",
     "role": "student" // super-admin,admin,executive,teacher,student
   },
-  "model": "user"
+  "model": "user",
 }
 ```
 
@@ -60,7 +60,7 @@ POST /api/v1/models/store
   "params": {
     "name": "Test Category"
   },
-  "model": "category"
+  "model": "category",
 }
 ```
 
@@ -96,7 +96,7 @@ POST /api/v1/models/store
     "fee": 2500,
     "discount": 500
   },
-  "model": "course"
+  "model": "course",
 }
 ```
 
@@ -161,7 +161,7 @@ POST /api/v1/models/dropdown
     {
       "value": 1,
       "label": "Test Category"
-    }
+    },
   // ..... //
   // ..... //
   // ..... //
@@ -186,7 +186,7 @@ POST /api/v1/models/get
   "model": "user",
   "columns": ["id", "name", "email", "phone"],
   // "actions" field is not mandatory, but it has only 3 options. You can either provide one or all of those options in the payloads "action" field in any combination it is necessary and you will get the name of the action buttons in response.
-  "actions": ["view", "edit", "delete"]
+  "actions": ["view", "edit", "delete"],
 }
 ```
 
@@ -238,7 +238,7 @@ POST /api/v1/models/get
             "class": "red"
           }
         ]
-      ]
+      ],
       // ..... //
       // ..... //
       // ..... //
@@ -268,4 +268,6 @@ You have to create a dynamic phone number input field and store them in an array
 
 Users can increase or decrease the number of input field for phone numbers (up to 5). Finally, on submit, you have to display all the data in a card view on the right side of the form. Try to apply some styling when showing the submitted data.
 
-A sample of the form is provided in this repository. (**./image.png**)
+A sample of the form is provided bellow:
+
+![Form](image.png)
