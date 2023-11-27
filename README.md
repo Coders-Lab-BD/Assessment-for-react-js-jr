@@ -162,6 +162,9 @@ POST /api/v1/models/dropdown
       "value": 1,
       "label": "Test Category"
     }
+  // ..... //
+  // ..... //
+  // ..... //
   ]
 }
 ```
